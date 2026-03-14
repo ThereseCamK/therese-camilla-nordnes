@@ -15,7 +15,10 @@ function router(){
         path = url.pathname;
     } catch (e) {}
 
-    if(path.endsWith("index.html") || path === "/templates/" ) path = "/";
+     if(path.endsWith("index.html")){
+        path = "/";
+    }
+
 
     const route = routes.find(r => r.path === path);
 
@@ -29,7 +32,7 @@ function router(){
 
 function navigateTo(url){
     history.pushState(null, null, url);
-    setActiveNav();
+    
     router();
  
 }
@@ -39,7 +42,7 @@ export function initRouter(){
         const link = e.target.closest("a[data-link]");
         if(link){
             e.preventDefault();
-            navigateTo(link.href);
+            navigateTo(link.pathname);
         }
     });
 
