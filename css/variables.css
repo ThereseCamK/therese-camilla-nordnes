@@ -1,0 +1,39 @@
+:root{
+    --primary-color:  #043950;
+    --secondary-color: rgb(187, 93, 6);
+    --accent-color: #38bdf8;
+    --light-font-color: rgb(248, 244, 244);
+    --dark-font-color: rgb(34, 33, 33);
+
+
+    --heading-1: 32px;
+    --heading-2: 24px;
+    --heading-3: 20px;
+    --paragraph: 16px;
+
+    --line-height: 1.5;
+    --letter-spacing: 0.5px;
+}
+h1, h2, h3{
+    letter-spacing: var(--letter-spacing);
+}
+h1{
+    font-size: var(--heading-1);
+}
+h2{
+    font-size: var(--heading-2);
+}
+h3{
+    font-size: var(--heading-3);
+}
+p, label, a{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+p{
+    font-size: var(--paragraph);
+}
+a{
+    font-size: 18px; 
+}
+
