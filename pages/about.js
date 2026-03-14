@@ -4,7 +4,7 @@ return `
 <div class="profile-card reveal">
 
     <img 
-        src="../public/images/profile.jpg" 
+        src="./public/images/profile.jpg" 
         alt="Therese Camilla Nordnes"
         class="profile-image"
     >

@@ -16,7 +16,7 @@ frontendutvikling, JavaScript og API-integrasjoner.
 ${projectCard(
 "Community Science Museum - nettside",
 "Skoleprosjekt fra Noroff i HTML og CSS.",
-"../public/images/museum.png",
+"./public/images/museum.png",
 "HTML, CSS",
 "https://theresecamk.github.io/community-science-museum-sp/",
 "https://github.com/ThereseCamK/community-science-museum-sp"
@@ -25,7 +25,7 @@ ${projectCard(
 ${projectCard(
 "Game Hub - online spill butikk",
 "Fiktiv Webapp som henter data fra et API og viser det i et responsivt grensesnitt. Skolesprosjekt i javascript",
-"../public/images/gamehub.png",
+"./public/images/gamehub.png",
 "JavaScript, REST API",
 "https://theresecamk.github.io/game-hub-js/",
 "https://github.com/ThereseCamK/game-hub-js"
@@ -34,7 +34,7 @@ ${projectCard(
 ${projectCard(
 "Game Hub - online spill butikk uten javascript",
 "Første Design prosjekt på Noroff. hvor jeg brukte figma først før kode i HTML og CSS",
-"../public/images/gamhubDesign.png",
+"./public/images/gamhubDesign.png",
 "Figma, HTML, CSS",
 "https://theresecamk.github.io/game-hub/",
 "https://github.com/ThereseCamK/game-hub"

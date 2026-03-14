@@ -1,3 +1,4 @@
+const basePath = "/therese-camilla-nordnes";
 import routes from "./routes.js";
 import { setActiveNav } from "../src/utils.js";
 
@@ -9,43 +10,59 @@ const NotFound = () => `
 `;
 
 function router(){
-    let path = location.pathname;
-    try {
-        const url = new URL(window.location.href);
-        path = url.pathname;
-    } catch (e) {}
 
-     if(path.endsWith("index.html")){
-        path = "/";
+    let path = window.location.pathname;
+
+    
+    if(path.startsWith(basePath)){
+        path = path.replace(basePath, "");
     }
 
+    if(path === "" || path === "/index.html"){
+        path = "/";
+    }
 
     const route = routes.find(r => r.path === path);
 
     const view = route ? route.view : NotFound;
+
     document.querySelector("#app").innerHTML = view();
 
     if(route && route.init){
         route.init();
     }
+
+    setActiveNav();
 }
 
 function navigateTo(url){
-    history.pushState(null, null, url);
-    
+
+    const fullUrl = basePath + url;
+
+    history.pushState(null, null, fullUrl);
+
     router();
- 
+
 }
 
 export function initRouter(){
+
     document.addEventListener("click", (e) => {
+
         const link = e.target.closest("a[data-link]");
+
         if(link){
+
             e.preventDefault();
+
             navigateTo(link.pathname);
+
         }
+
     });
 
     window.addEventListener("popstate", router);
+
     document.addEventListener("DOMContentLoaded", router);
+
 }

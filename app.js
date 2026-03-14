@@ -1,14 +1,17 @@
-const redirect = sessionStorage.redirect;
-delete sessionStorage.redirect;
-
-if (redirect && redirect !== location.pathname) {
-  history.replaceState(null, null, redirect);
-}
 import { initRouter } from "./router/router.js";
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
 
+
+const redirect = sessionStorage.getItem("redirect");
+
+if (redirect) {
+  sessionStorage.removeItem("redirect");
+  history.replaceState(null, null, redirect);
+}
+
 document.getElementById("header").innerHTML = Header();
 document.getElementById("footer").innerHTML = Footer();
+
 
 initRouter();
