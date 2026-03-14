@@ -40,7 +40,7 @@ function navigateTo(url){
     const fullUrl = basePath + url;
 
     history.pushState(null, null, fullUrl);
-
+    setActiveNav();
     router();
 
 }
