@@ -29,7 +29,7 @@ header{
     min-width: 200px;
     color: var(--light-font-color);
     font-weight: 300;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .header ul a:hover{

@@ -1,7 +1,7 @@
 export default function about() {
 
 return `
-<div class="profile-card reveal">
+<div class="profile-card ">
 
     <img 
         src="./public/images/profile.jpg" 
