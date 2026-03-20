@@ -57,7 +57,9 @@ transition:0.3s;
     align-items:center;
     gap:30px;
     transition:0.4s;
+    will-change: transform;
 }
+
 
 .nav-links a{
     color: var(--light-font-color);
