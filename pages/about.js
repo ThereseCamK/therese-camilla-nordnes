@@ -43,114 +43,141 @@ return `
 </div>
 <section class="about-page">
 
-<div class="about-hero reveal">
+    <div class="about-hero reveal">
 
-<h1>Om meg</h1>
+    <h1>Om meg</h1>
 
-<h2 class="typing">
-<span id="typing-text"></span>
-</h2>
+    <h2 class="typing">
+    <span id="typing-text"></span>
+    </h2>
 
-<p>
-Hei! Jeg heter Therese og er frontendutvikler med stor interesse for
-å bygge brukervennlige og tilgjengelige webgrensesnitt.
-</p>
+    <p>
+    Hei! Jeg heter Therese og er frontendutvikler med stor interesse for
+    å bygge brukervennlige og tilgjengelige webgrensesnitt.
+    </p>
 
-</div>
-
-
-<div class="about-content reveal">
-
-<h2>Min bakgrunn</h2>
-
-<p>
-Jeg arbeider i dag som IT-lærer ved GET Academy hvor jeg underviser i
-HTML, CSS, JavaScript, C# og SQL.
-</p>
-
-<p>
-Her veileder jeg studenter i programmering, problemløsning og utviklingsprosjekter,
-og jeg har utviklet en sterk forståelse for strukturert kode og gode utviklingsprinsipper.
-</p>
-
-<p>
-Jeg studerer også frontendutvikling ved Noroff hvor jeg videreutvikler
-kompetansen min innen moderne webutvikling.
-</p>
-
-</div>
+    </div>
 
 
-<div class="developer-values reveal">
+    <div class="about-content reveal">
 
-<h2>Hvordan jeg jobber</h2>
+    <h2>Min bakgrunn</h2>
 
-<ul>
+    <p>
+    Jeg arbeider i dag som IT-lærer ved GET Academy hvor jeg underviser i
+    HTML, CSS, JavaScript, C# og SQL.
+    </p>
 
-<li>Semantisk HTML</li>
-<li>Responsivt design</li>
-<li>Tilgjengelige grensesnitt</li>
-<li>Tydelig separasjon mellom HTML, CSS og JavaScript</li>
-<li>Ren og vedlikeholdbar kode</li>
+    <p>
+    Her veileder jeg studenter i programmering, problemløsning og utviklingsprosjekter,
+    og jeg har utviklet en sterk forståelse for strukturert kode og gode utviklingsprinsipper.
+    </p>
 
-</ul>
+    <p>
+    Jeg studerer også frontendutvikling ved Noroff hvor jeg videreutvikler
+    kompetansen min innen moderne webutvikling.
+    </p>
 
-</div>
-
-
-<div class="technologies reveal">
-
-<h2>Teknologier</h2>
-
-<div class="tech-grid">
-
-<span class="tech-card">HTML</span>
-<span class="tech-card">CSS</span>
-<span class="tech-card">JavaScript</span>
-<span class="tech-card">Git</span>
-<span class="tech-card">GitHub</span>
-<span class="tech-card">REST API</span>
-<span class="tech-card">SQL</span>
-<span class="tech-card">C#</span>
-
-</div>
-
-</div>
+    </div>
 
 
-<div class="personal reveal">
+    <div class="developer-values reveal">
 
-<h2>Litt om meg</h2>
+    <h2>Hvordan jeg jobber</h2>
 
-<p>
-Jeg liker å bygge små prosjekter for å lære nye teknologier og
-utvikle ferdighetene mine innen frontend.
-</p>
+    <ul>
 
-<p>
-Jeg er spesielt interessert i frontend-arkitektur, brukeropplevelse
-og hvordan godt design kan gjøre komplekse systemer enklere å bruke.
-</p>
+    <li>Semantisk HTML</li>
+    <li>Responsivt design</li>
+    <li>Tilgjengelige grensesnitt</li>
+    <li>Tydelig separasjon mellom HTML, CSS og JavaScript</li>
+    <li>Ren og vedlikeholdbar kode</li>
 
-</div>
+    </ul>
+
+    </div>
 
 
-<div class="contact reveal">
+    <div class="technologies reveal">
 
-<h2>Kontakt</h2>
+    <h2>Teknologier</h2>
 
-<p>Email: theresecnord@gmail.com</p>
-<p>Tlf: 413 77 965</p>
+    <div class="tech-grid">
 
-<p>
-<a href="https://github.com/ThereseCamK" target="_blank">GitHub</a>
-</p>
+    <span class="tech-card">HTML</span>
+    <span class="tech-card">CSS</span>
+    <span class="tech-card">JavaScript</span>
+    <span class="tech-card">Git</span>
+    <span class="tech-card">GitHub</span>
+    <span class="tech-card">REST API</span>
+    <span class="tech-card">SQL</span>
+    <span class="tech-card">C#</span>
 
-<p>
-<a href="https://www.linkedin.com/in/therese-camilla-nordnes-3a223420b/" target="_blank">LinkedIn</a>
-</p>
+    </div>
 
-</div>
+    </div>
+
+
+    <div class="personal reveal">
+
+    <h2>Litt om meg</h2>
+
+    <p>
+    Jeg liker å bygge små prosjekter for å lære nye teknologier og
+    utvikle ferdighetene mine innen frontend.
+    </p>
+
+    <p>
+    Jeg er spesielt interessert i frontend-arkitektur, brukeropplevelse
+    og hvordan godt design kan gjøre komplekse systemer enklere å bruke.
+    </p>
+
+    </div>
+
+    <div class="contact-page reveal">
+
+        <h1>Kontakt meg</h1>
+
+        <p class="contact-intro">
+        Har du spørsmål eller ønsker å jobbe sammen? Send meg gjerne en melding 👇
+        </p>
+
+        <form id="contact-form" class="contact-form">
+
+        <input 
+        type="text" 
+        name="name" 
+        placeholder="Navn" 
+        required
+        >
+
+        <input 
+        type="email" 
+        name="email" 
+        placeholder="Email" 
+        required
+        >
+
+        <textarea 
+        name="message" 
+        placeholder="Melding"
+        required
+        ></textarea>
+
+        <button type="submit">Send melding</button>
+
+        </form>
+        <p>
+        Eller send meg en mail direkte:  
+        <a href="mailto:theresecnord@gmail.com">
+        theresecnord@gmail.com
+        </a>
+        </p>
+        <p id="form-status"></p>
+
+
+    </div>
+   
 
 </section>
 
@@ -162,119 +189,145 @@ export function initAboutPage(){
 startTypingEffect();
 initRevealAnimation();
 initTechHover();
+initSendMail();
 
 }
 function startTypingEffect(){
 
-const words = [
-"Frontend Developer",
-"JavaScript Developer",
-"UI / UX Enthusiast"
-];
+    const words = [
+    "Frontend Developer",
+    "JavaScript Developer",
+    "UI / UX Enthusiast"
+    ];
 
-let wordIndex = 0;
-let charIndex = 0;
-let deleting = false;
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
 
-const element = document.getElementById("typing-text");
+    const element = document.getElementById("typing-text");
 
-if(!element) return;
+    if(!element) return;
 
-function type(){
+    function type(){
 
-const current = words[wordIndex];
+    const current = words[wordIndex];
 
-if(!deleting){
+    if(!deleting){
 
-element.textContent = current.substring(0,charIndex+1);
-charIndex++;
+    element.textContent = current.substring(0,charIndex+1);
+    charIndex++;
 
-if(charIndex === current.length){
+    if(charIndex === current.length){
 
-deleting = true;
-setTimeout(type,1500);
-return;
+    deleting = true;
+    setTimeout(type,1500);
+    return;
+
+    }
+
+    }else{
+
+    element.textContent = current.substring(0,charIndex-1);
+    charIndex--;
+
+    if(charIndex === 0){
+
+    deleting = false;
+    wordIndex++;
+
+    if(wordIndex === words.length){
+    wordIndex = 0;
+    }
+
+    }
+
+    }
+
+    setTimeout(type,100);
+
+    }
+
+    type();
 
 }
 
-}else{
-
-element.textContent = current.substring(0,charIndex-1);
-charIndex--;
-
-if(charIndex === 0){
-
-deleting = false;
-wordIndex++;
-
-if(wordIndex === words.length){
-wordIndex = 0;
-}
-
-}
-
-}
-
-setTimeout(type,100);
-
-}
-
-type();
-
-}
 
 
 
-
-// Scroll animation
 
 
 function initRevealAnimation(){
 
+
+
+    window.addEventListener("scroll", reveal);
+
+    reveal();
+
+}
 function reveal(){
 
-const elements = document.querySelectorAll(".reveal");
+    const elements = document.querySelectorAll(".reveal");
 
-elements.forEach(el => {
+    elements.forEach(el => {
 
-const windowHeight = window.innerHeight;
-const elementTop = el.getBoundingClientRect().top;
-const visiblePoint = 150;
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    const visiblePoint = 150;
 
-if(elementTop < windowHeight - visiblePoint){
-el.classList.add("active");
-}
+    if(elementTop < windowHeight - visiblePoint){
+    el.classList.add("active");
+    }
 
-});
+    });
 
-}
-
-window.addEventListener("scroll", reveal);
-
-reveal();
-
-}
-
-
-
-
-// Tech hover
+    }
 
 
 function initTechHover(){
 
-const cards = document.querySelectorAll(".tech-card");
+    const cards = document.querySelectorAll(".tech-card");
 
-cards.forEach(card => {
+    cards.forEach(card => {
 
-card.addEventListener("mouseenter", () => {
-card.style.transform = "scale(1.05)";
-});
+    card.addEventListener("mouseenter", () => {
+    card.style.transform = "scale(1.05)";
+    });
 
-card.addEventListener("mouseleave", () => {
-card.style.transform = "scale(1)";
-});
+    card.addEventListener("mouseleave", () => {
+    card.style.transform = "scale(1)";
+    });
 
-});
+    });
 
+}
+function initSendMail(){
+    emailjs.init("pGGr4j9nj6kuIm_Dx");
+
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+    "service_kxu2hrk",
+    "template_r34u34h",
+    this
+    ).then(() => {
+
+ 
+    status.textContent = "Meldingen er sendt!";
+    status.style.color = "green";
+    form.reset();
+
+    }, (error) => {
+         
+    status.textContent = "Noe gikk galt, prøv igjen.";
+    status.style.color = "red";
+
+    });
+
+    });
 }

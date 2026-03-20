@@ -157,7 +157,57 @@ color:#38bdf8;
 margin-bottom:20px;
 font-weight:600;
 }
+.contact-page{
+max-width:700px;
+margin:auto;
+padding:100px 20px;
+text-align:center;
+}
 
+.contact-intro{
+color:#475569;
+margin-bottom:30px;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid #cbd5e1;
+font-size:1rem;
+}
+
+.contact-form textarea{
+min-height:120px;
+resize:none;
+}
+
+.contact-form button{
+background:#38bdf8;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#0ea5e9;
+transform:translateY(-2px);
+}
+
+#form-status{
+margin-top:15px;
+font-weight:500;
+}
 
 @media (max-width:768px){
 .profile-card{

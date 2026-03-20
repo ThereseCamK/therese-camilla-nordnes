@@ -22,6 +22,7 @@ export default function footer() {
       <div class="footer-contact">
         <h4>Contact</h4>
         <p>Email: theresecnord@gmail.com</p>
+        <p>Tlf: 413 77 965</p>
         <a href="https://github.com/ThereseCamK">GitHub</a>
         <a href="https://www.linkedin.com/in/therese-camilla-nordnes-3a223420b/">LinkedIn</a>
       </div>
