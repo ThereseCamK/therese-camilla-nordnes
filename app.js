@@ -1,7 +1,7 @@
 import { initRouter } from "./router/router.js";
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
-
+import { initHamburger } from "./src/utils.js";
 
 const redirect = sessionStorage.getItem("redirect");
 
@@ -15,3 +15,4 @@ document.getElementById("footer").innerHTML = Footer();
 
 
 initRouter();
+initHamburger();

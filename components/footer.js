@@ -2,10 +2,14 @@ export default function footer() {
   return `
 
 <footer class="footer">
-
+<div class="footer-logo">
+<img src="./public/icons/tcn-icon-logo.png" alt="logo">
+</div>
   <div class="footer-container">
 
     <div class="footer-brand">
+    
+
       <h3>Therese Nordnes</h3>
       <p>Frontend Developer</p>
     </div>

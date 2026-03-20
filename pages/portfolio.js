@@ -39,6 +39,14 @@ ${projectCard(
 "https://theresecamk.github.io/game-hub/",
 "https://github.com/ThereseCamK/game-hub"
 )}
+${projectCard(
+"Webinar -christmasgame",
+"Ett lite javascript spill jeg gjorde med en venninne, vi brukte til ett webinar",
+"./public/images/christmas-webinar.png",
+"javascript, HTML, CSS",
+"https://theresecamk.github.io/Webinar/",
+"https://github.com/ThereseCamK/Webinar"
+)}
 
 
 </div>
