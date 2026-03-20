@@ -1,26 +1,25 @@
 export function setActiveNav(){
-    const links = document.querySelectorAll(".navbar a");
-    const currentPath = window.location.pathname;
 
-    links.forEach(link => {
-        const linkPath = link.getAttribute("href");
-        link.classList.remove("active");  
-     if( linkPath === currentPath){
-        link.classList.add("active")
-        }
-    });
-}
-const scrollBtn = document.getElementById("scrollTopBtn");
+  const basePath = window.location.hostname.includes("github.io")
+    ? "/therese-camilla-nordnes"
+    : "";
 
-if(scrollBtn){
+  let path = window.location.pathname;
 
-scrollBtn.addEventListener("click", () => {
+  if(path.startsWith(basePath)){
+    path = path.replace(basePath, "");
+  }
 
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
+  if(path === "") path = "/";
 
-});
+  document.querySelectorAll("[data-link]").forEach(link => {
+
+    link.classList.remove("active");
+
+    if(link.pathname === path){
+      link.classList.add("active");
+    }
+
+  });
 
 }

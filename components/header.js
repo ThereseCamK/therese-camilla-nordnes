@@ -6,6 +6,7 @@ export default function Header(){
                 <li><a href="/about" data-link> About  </a></li>
                 <li><a href="/portfolio" data-link> Portfolio </a></li>
             </ul>
+            
         </div>
     `;
 }

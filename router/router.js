@@ -1,4 +1,6 @@
-const basePath = "/therese-camilla-nordnes";
+const basePath = window.location.hostname.includes("github.io")
+  ? "/therese-camilla-nordnes"
+  : "";
 import routes from "./routes.js";
 import { setActiveNav } from "../src/utils.js";
 
@@ -31,8 +33,8 @@ function router(){
     if(route && route.init){
         route.init();
     }
-
     setActiveNav();
+
 }
 
 function navigateTo(url){
@@ -40,8 +42,9 @@ function navigateTo(url){
     const fullUrl = basePath + url;
 
     history.pushState(null, null, fullUrl);
-    setActiveNav();
+ 
     router();
+
 
 }
 
